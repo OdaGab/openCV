@@ -20,7 +20,7 @@ O script `opcv.py` realiza as seguintes ações:
     ```python
     img = cv.imread('Odair.png')
     ```
-    A função `cv.imread()` é usada para carregar la imagem `Odair.png` do disco.
+    A função `cv.imread()` é usada para carregar a imagem `Odair.png` do disco.
 
 3.  **Converte para tons de cinza:**
     ```python
