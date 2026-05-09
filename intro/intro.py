@@ -1,11 +1,13 @@
 import cv2
+import os
 
 # Este é um arquivo introdutório básico para processamento de imagens com OpenCV
 # Vamos importar uma imagem, convertê-la para preto e branco (escala de cinza) e salvar o resultado
 
-# 1. Importar a imagem: Usamos cv2.imread para carregar a imagem do caminho especificado
-# O caminho './Odair.png' carrega a imagem da mesma pasta
-img = cv2.imread('./Odair.png')
+# 1. Importar a imagem: montamos um caminho absoluto a partir da pasta do script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+image_path = os.path.join(script_dir, 'Odair.png')
+img = cv2.imread(image_path)
 
 # Verificar se a imagem foi carregada corretamente
 if img is None:
