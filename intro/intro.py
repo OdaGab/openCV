@@ -4,8 +4,8 @@ import cv2
 # Vamos importar uma imagem, convertê-la para preto e branco (escala de cinza) e salvar o resultado
 
 # 1. Importar a imagem: Usamos cv2.imread para carregar a imagem do caminho especificado
-# O caminho '../imagens/Odair.png' aponta para a pasta 'imagens' no diretório pai
-img = cv2.imread('../imagens/Odair.png')
+# O caminho './Odair.png' carrega a imagem da mesma pasta
+img = cv2.imread('./Odair.png')
 
 # Verificar se a imagem foi carregada corretamente
 if img is None:
